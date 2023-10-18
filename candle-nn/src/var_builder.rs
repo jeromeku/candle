@@ -6,6 +6,7 @@ use candle::{safetensors::Load, DType, Device, Error, Result, Shape, Tensor};
 use safetensors::{slice::IndexOp, tensor::SafeTensors};
 use std::collections::HashMap;
 use std::sync::Arc;
+use tracing::{event, Level};
 
 /// A structure used to retrieve variables, these variables can either come from storage or be
 /// generated via some form of initialization.
@@ -190,11 +191,63 @@ impl<'a, B: Backend> VarBuilderArgs<'a, B> {
     }
 }
 
-struct Zeros;
-
+pub struct Zeros;
 impl SimpleBackend for Zeros {
     fn get(&self, s: Shape, _: &str, _: crate::Init, dtype: DType, dev: &Device) -> Result<Tensor> {
         Tensor::zeros(s, dtype, dev)
+    }
+
+    fn contains_tensor(&self, _name: &str) -> bool {
+        true
+    }
+}
+pub struct DebugBackend;
+
+impl SimpleBackend for DebugBackend {
+    fn get(
+        &self,
+        s: Shape,
+        path: &str,
+        _: crate::Init,
+        dtype: DType,
+        device: &Device,
+    ) -> Result<Tensor> {
+        event!(
+            Level::DEBUG,
+            path = path,
+            shape = s.to_string(),
+            dtype = dtype.to_string()
+        );
+
+        Tensor::zeros(s, dtype, device)
+    }
+
+    fn contains_tensor(&self, _name: &str) -> bool {
+        true
+    }
+}
+
+impl DebugBackend {
+    pub fn get_with_hints(
+        &self,
+        s: Shape,
+        name: &str,
+        _: <std::boxed::Box<dyn SimpleBackend> as Backend>::Hints,
+    ) -> Result<Tensor> {
+        event!(
+            Level::DEBUG,
+            path = name,
+            shape = s.to_string(),
+            dtype = DType::F64.to_string()
+        );
+
+        Tensor::zeros(s, DType::F64, &Device::Cpu)
+    }
+}
+pub struct Ones;
+impl SimpleBackend for Ones {
+    fn get(&self, s: Shape, _: &str, _: crate::Init, dtype: DType, dev: &Device) -> Result<Tensor> {
+        Tensor::ones(s, dtype, dev)
     }
 
     fn contains_tensor(&self, _name: &str) -> bool {
@@ -326,39 +379,6 @@ impl SimpleBackend for candle::npy::NpzTensors {
     }
 }
 
-impl SimpleBackend for candle::pickle::PthTensors {
-    fn get(
-        &self,
-        s: Shape,
-        path: &str,
-        _: crate::Init,
-        dtype: DType,
-        dev: &Device,
-    ) -> Result<Tensor> {
-        let tensor = match self.get(path)? {
-            None => Err(Error::CannotFindTensor {
-                path: path.to_string(),
-            }
-            .bt())?,
-            Some(tensor) => tensor,
-        };
-        let tensor = tensor.to_device(dev)?.to_dtype(dtype)?;
-        if tensor.shape() != &s {
-            Err(candle::Error::UnexpectedShape {
-                msg: format!("shape mismatch for {path}"),
-                expected: s,
-                got: tensor.shape().clone(),
-            }
-            .bt())?
-        }
-        Ok(tensor)
-    }
-
-    fn contains_tensor(&self, name: &str) -> bool {
-        self.get(name).map_or(false, |v| v.is_some())
-    }
-}
-
 impl SimpleBackend for candle::safetensors::MmapedSafetensors {
     fn get(
         &self,
@@ -429,7 +449,12 @@ impl<'a> VarBuilder<'a> {
     pub fn zeros(dtype: DType, dev: &Device) -> Self {
         Self::new(Box::new(Zeros), dtype, dev.clone())
     }
-
+    pub fn debug(dtype: DType, dev: &Device) -> Self {
+        Self::new(Box::new(DebugBackend), dtype, dev.clone())
+    }
+    pub fn ones(dtype: DType, dev: &Device) -> Self {
+        Self::new(Box::new(Ones), dtype, dev.clone())
+    }
     /// Initializes a `VarBuilder` that retrieves tensors stored in a hashtable. An error is
     /// returned if no tensor is available under the requested path or on shape mismatches.
     pub fn from_tensors(ts: HashMap<String, Tensor>, dtype: DType, dev: &Device) -> Self {
@@ -472,16 +497,9 @@ impl<'a> VarBuilder<'a> {
         let npz = candle::npy::NpzTensors::new(p)?;
         Ok(Self::new(Box::new(npz), dtype, dev.clone()))
     }
-
-    /// Initializes a `VarBuilder` that retrieves tensors stored in a pytorch pth file.
-    pub fn from_pth<P: AsRef<std::path::Path>>(p: P, dtype: DType, dev: &Device) -> Result<Self> {
-        let pth = candle::pickle::PthTensors::new(p)?;
-        Ok(Self::new(Box::new(pth), dtype, dev.clone()))
-    }
 }
 
 pub struct ShardedSafeTensors(candle::safetensors::MmapedSafetensors);
-
 pub type ShardedVarBuilder<'a> = VarBuilderArgs<'a, ShardedSafeTensors>;
 
 impl ShardedSafeTensors {
