@@ -23,6 +23,7 @@ serde = { workspace = true }
 [dev-dependencies]
 anyhow = { workspace = true }
 clap = { workspace = true }
+tracing = { workspace = true }
 
 [features]
 default = []
