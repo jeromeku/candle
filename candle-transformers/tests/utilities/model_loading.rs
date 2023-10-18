@@ -6,7 +6,7 @@ use candle_transformers::models::quantized_mistral::{
 use candle_transformers::quantized_var_builder::VarBuilder as QVarBuilder;
 use std::path::PathBuf;
 
-use candle::{DType, Device, Result as CandleResult, Shape, Tensor};
+use candle::{DType, Device, Result as CandleResult};
 use candle_nn::VarBuilder;
 
 use hf_hub::api::sync::{Api, ApiRepo};
