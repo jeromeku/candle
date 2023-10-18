@@ -1,0 +1,291 @@
+{"timestamp":"2023-10-17T18:54:40.402920Z","level":"DEBUG","fields":{"path":"model.embed_tokens.weight","shape":"[32000, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.143988Z","level":"DEBUG","fields":{"path":"model.layers.0.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144097Z","level":"DEBUG","fields":{"path":"model.layers.0.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144205Z","level":"DEBUG","fields":{"path":"model.layers.0.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144262Z","level":"DEBUG","fields":{"path":"model.layers.0.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144295Z","level":"DEBUG","fields":{"path":"model.layers.0.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144345Z","level":"DEBUG","fields":{"path":"model.layers.0.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144428Z","level":"DEBUG","fields":{"path":"model.layers.0.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144464Z","level":"DEBUG","fields":{"path":"model.layers.0.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144517Z","level":"DEBUG","fields":{"path":"model.layers.0.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144571Z","level":"DEBUG","fields":{"path":"model.layers.1.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144626Z","level":"DEBUG","fields":{"path":"model.layers.1.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.144677Z","level":"DEBUG","fields":{"path":"model.layers.1.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154392Z","level":"DEBUG","fields":{"path":"model.layers.1.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154485Z","level":"DEBUG","fields":{"path":"model.layers.1.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154544Z","level":"DEBUG","fields":{"path":"model.layers.1.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154590Z","level":"DEBUG","fields":{"path":"model.layers.1.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154651Z","level":"DEBUG","fields":{"path":"model.layers.1.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154707Z","level":"DEBUG","fields":{"path":"model.layers.1.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154755Z","level":"DEBUG","fields":{"path":"model.layers.2.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154817Z","level":"DEBUG","fields":{"path":"model.layers.2.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154939Z","level":"DEBUG","fields":{"path":"model.layers.2.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.154979Z","level":"DEBUG","fields":{"path":"model.layers.2.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155036Z","level":"DEBUG","fields":{"path":"model.layers.2.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155086Z","level":"DEBUG","fields":{"path":"model.layers.2.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155140Z","level":"DEBUG","fields":{"path":"model.layers.2.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155191Z","level":"DEBUG","fields":{"path":"model.layers.2.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155244Z","level":"DEBUG","fields":{"path":"model.layers.2.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155295Z","level":"DEBUG","fields":{"path":"model.layers.3.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.155351Z","level":"DEBUG","fields":{"path":"model.layers.3.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164070Z","level":"DEBUG","fields":{"path":"model.layers.3.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164249Z","level":"DEBUG","fields":{"path":"model.layers.3.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164325Z","level":"DEBUG","fields":{"path":"model.layers.3.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164377Z","level":"DEBUG","fields":{"path":"model.layers.3.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164429Z","level":"DEBUG","fields":{"path":"model.layers.3.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164484Z","level":"DEBUG","fields":{"path":"model.layers.3.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164538Z","level":"DEBUG","fields":{"path":"model.layers.3.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164599Z","level":"DEBUG","fields":{"path":"model.layers.4.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164653Z","level":"DEBUG","fields":{"path":"model.layers.4.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.164708Z","level":"DEBUG","fields":{"path":"model.layers.4.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173258Z","level":"DEBUG","fields":{"path":"model.layers.4.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173345Z","level":"DEBUG","fields":{"path":"model.layers.4.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173403Z","level":"DEBUG","fields":{"path":"model.layers.4.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173452Z","level":"DEBUG","fields":{"path":"model.layers.4.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173501Z","level":"DEBUG","fields":{"path":"model.layers.4.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173631Z","level":"DEBUG","fields":{"path":"model.layers.4.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173694Z","level":"DEBUG","fields":{"path":"model.layers.5.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173755Z","level":"DEBUG","fields":{"path":"model.layers.5.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173863Z","level":"DEBUG","fields":{"path":"model.layers.5.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173917Z","level":"DEBUG","fields":{"path":"model.layers.5.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.173966Z","level":"DEBUG","fields":{"path":"model.layers.5.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.174019Z","level":"DEBUG","fields":{"path":"model.layers.5.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.174070Z","level":"DEBUG","fields":{"path":"model.layers.5.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.174121Z","level":"DEBUG","fields":{"path":"model.layers.5.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.174176Z","level":"DEBUG","fields":{"path":"model.layers.5.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.174241Z","level":"DEBUG","fields":{"path":"model.layers.6.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.174287Z","level":"DEBUG","fields":{"path":"model.layers.6.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182557Z","level":"DEBUG","fields":{"path":"model.layers.6.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182709Z","level":"DEBUG","fields":{"path":"model.layers.6.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182778Z","level":"DEBUG","fields":{"path":"model.layers.6.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182834Z","level":"DEBUG","fields":{"path":"model.layers.6.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182881Z","level":"DEBUG","fields":{"path":"model.layers.6.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182936Z","level":"DEBUG","fields":{"path":"model.layers.6.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.182986Z","level":"DEBUG","fields":{"path":"model.layers.6.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.183044Z","level":"DEBUG","fields":{"path":"model.layers.7.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.183102Z","level":"DEBUG","fields":{"path":"model.layers.7.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.183153Z","level":"DEBUG","fields":{"path":"model.layers.7.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191416Z","level":"DEBUG","fields":{"path":"model.layers.7.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191510Z","level":"DEBUG","fields":{"path":"model.layers.7.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191556Z","level":"DEBUG","fields":{"path":"model.layers.7.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191612Z","level":"DEBUG","fields":{"path":"model.layers.7.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191656Z","level":"DEBUG","fields":{"path":"model.layers.7.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191716Z","level":"DEBUG","fields":{"path":"model.layers.7.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191773Z","level":"DEBUG","fields":{"path":"model.layers.8.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191819Z","level":"DEBUG","fields":{"path":"model.layers.8.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191929Z","level":"DEBUG","fields":{"path":"model.layers.8.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.191984Z","level":"DEBUG","fields":{"path":"model.layers.8.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192035Z","level":"DEBUG","fields":{"path":"model.layers.8.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192107Z","level":"DEBUG","fields":{"path":"model.layers.8.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192173Z","level":"DEBUG","fields":{"path":"model.layers.8.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192228Z","level":"DEBUG","fields":{"path":"model.layers.8.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192278Z","level":"DEBUG","fields":{"path":"model.layers.8.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192334Z","level":"DEBUG","fields":{"path":"model.layers.9.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.192391Z","level":"DEBUG","fields":{"path":"model.layers.9.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200513Z","level":"DEBUG","fields":{"path":"model.layers.9.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200696Z","level":"DEBUG","fields":{"path":"model.layers.9.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200727Z","level":"DEBUG","fields":{"path":"model.layers.9.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200810Z","level":"DEBUG","fields":{"path":"model.layers.9.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200849Z","level":"DEBUG","fields":{"path":"model.layers.9.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200876Z","level":"DEBUG","fields":{"path":"model.layers.9.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200950Z","level":"DEBUG","fields":{"path":"model.layers.9.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.200976Z","level":"DEBUG","fields":{"path":"model.layers.10.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.201059Z","level":"DEBUG","fields":{"path":"model.layers.10.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.201097Z","level":"DEBUG","fields":{"path":"model.layers.10.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209203Z","level":"DEBUG","fields":{"path":"model.layers.10.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209290Z","level":"DEBUG","fields":{"path":"model.layers.10.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209331Z","level":"DEBUG","fields":{"path":"model.layers.10.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209379Z","level":"DEBUG","fields":{"path":"model.layers.10.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209420Z","level":"DEBUG","fields":{"path":"model.layers.10.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209487Z","level":"DEBUG","fields":{"path":"model.layers.10.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209546Z","level":"DEBUG","fields":{"path":"model.layers.11.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209592Z","level":"DEBUG","fields":{"path":"model.layers.11.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209684Z","level":"DEBUG","fields":{"path":"model.layers.11.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209739Z","level":"DEBUG","fields":{"path":"model.layers.11.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209790Z","level":"DEBUG","fields":{"path":"model.layers.11.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209841Z","level":"DEBUG","fields":{"path":"model.layers.11.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209889Z","level":"DEBUG","fields":{"path":"model.layers.11.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209938Z","level":"DEBUG","fields":{"path":"model.layers.11.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.209984Z","level":"DEBUG","fields":{"path":"model.layers.11.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.210038Z","level":"DEBUG","fields":{"path":"model.layers.12.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.210087Z","level":"DEBUG","fields":{"path":"model.layers.12.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218275Z","level":"DEBUG","fields":{"path":"model.layers.12.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218398Z","level":"DEBUG","fields":{"path":"model.layers.12.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218486Z","level":"DEBUG","fields":{"path":"model.layers.12.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218534Z","level":"DEBUG","fields":{"path":"model.layers.12.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218582Z","level":"DEBUG","fields":{"path":"model.layers.12.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218631Z","level":"DEBUG","fields":{"path":"model.layers.12.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218682Z","level":"DEBUG","fields":{"path":"model.layers.12.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218735Z","level":"DEBUG","fields":{"path":"model.layers.13.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218789Z","level":"DEBUG","fields":{"path":"model.layers.13.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.218840Z","level":"DEBUG","fields":{"path":"model.layers.13.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.226942Z","level":"DEBUG","fields":{"path":"model.layers.13.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227033Z","level":"DEBUG","fields":{"path":"model.layers.13.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227082Z","level":"DEBUG","fields":{"path":"model.layers.13.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227133Z","level":"DEBUG","fields":{"path":"model.layers.13.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227201Z","level":"DEBUG","fields":{"path":"model.layers.13.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227276Z","level":"DEBUG","fields":{"path":"model.layers.13.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227342Z","level":"DEBUG","fields":{"path":"model.layers.14.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227401Z","level":"DEBUG","fields":{"path":"model.layers.14.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227498Z","level":"DEBUG","fields":{"path":"model.layers.14.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227558Z","level":"DEBUG","fields":{"path":"model.layers.14.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227610Z","level":"DEBUG","fields":{"path":"model.layers.14.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227651Z","level":"DEBUG","fields":{"path":"model.layers.14.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227710Z","level":"DEBUG","fields":{"path":"model.layers.14.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227750Z","level":"DEBUG","fields":{"path":"model.layers.14.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227810Z","level":"DEBUG","fields":{"path":"model.layers.14.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227854Z","level":"DEBUG","fields":{"path":"model.layers.15.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.227914Z","level":"DEBUG","fields":{"path":"model.layers.15.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236214Z","level":"DEBUG","fields":{"path":"model.layers.15.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236341Z","level":"DEBUG","fields":{"path":"model.layers.15.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236402Z","level":"DEBUG","fields":{"path":"model.layers.15.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236448Z","level":"DEBUG","fields":{"path":"model.layers.15.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236499Z","level":"DEBUG","fields":{"path":"model.layers.15.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236550Z","level":"DEBUG","fields":{"path":"model.layers.15.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236621Z","level":"DEBUG","fields":{"path":"model.layers.15.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236674Z","level":"DEBUG","fields":{"path":"model.layers.16.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236726Z","level":"DEBUG","fields":{"path":"model.layers.16.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.236780Z","level":"DEBUG","fields":{"path":"model.layers.16.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.244947Z","level":"DEBUG","fields":{"path":"model.layers.16.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245042Z","level":"DEBUG","fields":{"path":"model.layers.16.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245102Z","level":"DEBUG","fields":{"path":"model.layers.16.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245146Z","level":"DEBUG","fields":{"path":"model.layers.16.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245196Z","level":"DEBUG","fields":{"path":"model.layers.16.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245244Z","level":"DEBUG","fields":{"path":"model.layers.16.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245310Z","level":"DEBUG","fields":{"path":"model.layers.17.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245349Z","level":"DEBUG","fields":{"path":"model.layers.17.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245461Z","level":"DEBUG","fields":{"path":"model.layers.17.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245507Z","level":"DEBUG","fields":{"path":"model.layers.17.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245560Z","level":"DEBUG","fields":{"path":"model.layers.17.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245612Z","level":"DEBUG","fields":{"path":"model.layers.17.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245656Z","level":"DEBUG","fields":{"path":"model.layers.17.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245715Z","level":"DEBUG","fields":{"path":"model.layers.17.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245760Z","level":"DEBUG","fields":{"path":"model.layers.17.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245822Z","level":"DEBUG","fields":{"path":"model.layers.18.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.245861Z","level":"DEBUG","fields":{"path":"model.layers.18.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.253956Z","level":"DEBUG","fields":{"path":"model.layers.18.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254122Z","level":"DEBUG","fields":{"path":"model.layers.18.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254186Z","level":"DEBUG","fields":{"path":"model.layers.18.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254239Z","level":"DEBUG","fields":{"path":"model.layers.18.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254289Z","level":"DEBUG","fields":{"path":"model.layers.18.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254336Z","level":"DEBUG","fields":{"path":"model.layers.18.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254391Z","level":"DEBUG","fields":{"path":"model.layers.18.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254442Z","level":"DEBUG","fields":{"path":"model.layers.19.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254500Z","level":"DEBUG","fields":{"path":"model.layers.19.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.254552Z","level":"DEBUG","fields":{"path":"model.layers.19.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.262655Z","level":"DEBUG","fields":{"path":"model.layers.19.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.262752Z","level":"DEBUG","fields":{"path":"model.layers.19.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.262805Z","level":"DEBUG","fields":{"path":"model.layers.19.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.262856Z","level":"DEBUG","fields":{"path":"model.layers.19.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.262900Z","level":"DEBUG","fields":{"path":"model.layers.19.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.262962Z","level":"DEBUG","fields":{"path":"model.layers.19.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263014Z","level":"DEBUG","fields":{"path":"model.layers.20.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263059Z","level":"DEBUG","fields":{"path":"model.layers.20.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263165Z","level":"DEBUG","fields":{"path":"model.layers.20.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263221Z","level":"DEBUG","fields":{"path":"model.layers.20.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263275Z","level":"DEBUG","fields":{"path":"model.layers.20.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263328Z","level":"DEBUG","fields":{"path":"model.layers.20.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263399Z","level":"DEBUG","fields":{"path":"model.layers.20.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263457Z","level":"DEBUG","fields":{"path":"model.layers.20.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263509Z","level":"DEBUG","fields":{"path":"model.layers.20.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263564Z","level":"DEBUG","fields":{"path":"model.layers.21.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.263618Z","level":"DEBUG","fields":{"path":"model.layers.21.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.271872Z","level":"DEBUG","fields":{"path":"model.layers.21.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272055Z","level":"DEBUG","fields":{"path":"model.layers.21.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272118Z","level":"DEBUG","fields":{"path":"model.layers.21.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272174Z","level":"DEBUG","fields":{"path":"model.layers.21.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272238Z","level":"DEBUG","fields":{"path":"model.layers.21.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272292Z","level":"DEBUG","fields":{"path":"model.layers.21.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272357Z","level":"DEBUG","fields":{"path":"model.layers.21.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272424Z","level":"DEBUG","fields":{"path":"model.layers.22.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272480Z","level":"DEBUG","fields":{"path":"model.layers.22.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.272535Z","level":"DEBUG","fields":{"path":"model.layers.22.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.280752Z","level":"DEBUG","fields":{"path":"model.layers.22.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.280840Z","level":"DEBUG","fields":{"path":"model.layers.22.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.280900Z","level":"DEBUG","fields":{"path":"model.layers.22.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.280949Z","level":"DEBUG","fields":{"path":"model.layers.22.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281001Z","level":"DEBUG","fields":{"path":"model.layers.22.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281057Z","level":"DEBUG","fields":{"path":"model.layers.22.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281108Z","level":"DEBUG","fields":{"path":"model.layers.23.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281171Z","level":"DEBUG","fields":{"path":"model.layers.23.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281266Z","level":"DEBUG","fields":{"path":"model.layers.23.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281332Z","level":"DEBUG","fields":{"path":"model.layers.23.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281382Z","level":"DEBUG","fields":{"path":"model.layers.23.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281432Z","level":"DEBUG","fields":{"path":"model.layers.23.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281485Z","level":"DEBUG","fields":{"path":"model.layers.23.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281532Z","level":"DEBUG","fields":{"path":"model.layers.23.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281584Z","level":"DEBUG","fields":{"path":"model.layers.23.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281642Z","level":"DEBUG","fields":{"path":"model.layers.24.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.281692Z","level":"DEBUG","fields":{"path":"model.layers.24.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290051Z","level":"DEBUG","fields":{"path":"model.layers.24.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290199Z","level":"DEBUG","fields":{"path":"model.layers.24.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290259Z","level":"DEBUG","fields":{"path":"model.layers.24.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290309Z","level":"DEBUG","fields":{"path":"model.layers.24.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290358Z","level":"DEBUG","fields":{"path":"model.layers.24.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290408Z","level":"DEBUG","fields":{"path":"model.layers.24.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290459Z","level":"DEBUG","fields":{"path":"model.layers.24.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290514Z","level":"DEBUG","fields":{"path":"model.layers.25.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290565Z","level":"DEBUG","fields":{"path":"model.layers.25.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.290618Z","level":"DEBUG","fields":{"path":"model.layers.25.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.298767Z","level":"DEBUG","fields":{"path":"model.layers.25.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.298826Z","level":"DEBUG","fields":{"path":"model.layers.25.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.298886Z","level":"DEBUG","fields":{"path":"model.layers.25.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.298934Z","level":"DEBUG","fields":{"path":"model.layers.25.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.298986Z","level":"DEBUG","fields":{"path":"model.layers.25.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299037Z","level":"DEBUG","fields":{"path":"model.layers.25.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299094Z","level":"DEBUG","fields":{"path":"model.layers.26.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299151Z","level":"DEBUG","fields":{"path":"model.layers.26.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299240Z","level":"DEBUG","fields":{"path":"model.layers.26.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299301Z","level":"DEBUG","fields":{"path":"model.layers.26.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299351Z","level":"DEBUG","fields":{"path":"model.layers.26.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299404Z","level":"DEBUG","fields":{"path":"model.layers.26.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299457Z","level":"DEBUG","fields":{"path":"model.layers.26.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299509Z","level":"DEBUG","fields":{"path":"model.layers.26.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299568Z","level":"DEBUG","fields":{"path":"model.layers.26.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299620Z","level":"DEBUG","fields":{"path":"model.layers.27.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.299673Z","level":"DEBUG","fields":{"path":"model.layers.27.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.307673Z","level":"DEBUG","fields":{"path":"model.layers.27.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.307789Z","level":"DEBUG","fields":{"path":"model.layers.27.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.307849Z","level":"DEBUG","fields":{"path":"model.layers.27.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.307885Z","level":"DEBUG","fields":{"path":"model.layers.27.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.307928Z","level":"DEBUG","fields":{"path":"model.layers.27.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.307968Z","level":"DEBUG","fields":{"path":"model.layers.27.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.308016Z","level":"DEBUG","fields":{"path":"model.layers.27.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.308072Z","level":"DEBUG","fields":{"path":"model.layers.28.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.308122Z","level":"DEBUG","fields":{"path":"model.layers.28.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.308171Z","level":"DEBUG","fields":{"path":"model.layers.28.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316194Z","level":"DEBUG","fields":{"path":"model.layers.28.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316289Z","level":"DEBUG","fields":{"path":"model.layers.28.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316325Z","level":"DEBUG","fields":{"path":"model.layers.28.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316385Z","level":"DEBUG","fields":{"path":"model.layers.28.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316448Z","level":"DEBUG","fields":{"path":"model.layers.28.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316489Z","level":"DEBUG","fields":{"path":"model.layers.28.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316538Z","level":"DEBUG","fields":{"path":"model.layers.29.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316589Z","level":"DEBUG","fields":{"path":"model.layers.29.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316691Z","level":"DEBUG","fields":{"path":"model.layers.29.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316749Z","level":"DEBUG","fields":{"path":"model.layers.29.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316799Z","level":"DEBUG","fields":{"path":"model.layers.29.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316849Z","level":"DEBUG","fields":{"path":"model.layers.29.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.316923Z","level":"DEBUG","fields":{"path":"model.layers.29.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.317012Z","level":"DEBUG","fields":{"path":"model.layers.29.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.317058Z","level":"DEBUG","fields":{"path":"model.layers.29.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.317130Z","level":"DEBUG","fields":{"path":"model.layers.30.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.317198Z","level":"DEBUG","fields":{"path":"model.layers.30.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.325652Z","level":"DEBUG","fields":{"path":"model.layers.30.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.325775Z","level":"DEBUG","fields":{"path":"model.layers.30.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.325845Z","level":"DEBUG","fields":{"path":"model.layers.30.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.325910Z","level":"DEBUG","fields":{"path":"model.layers.30.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.325949Z","level":"DEBUG","fields":{"path":"model.layers.30.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.326002Z","level":"DEBUG","fields":{"path":"model.layers.30.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.326053Z","level":"DEBUG","fields":{"path":"model.layers.30.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.326107Z","level":"DEBUG","fields":{"path":"model.layers.31.self_attn.q_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.326155Z","level":"DEBUG","fields":{"path":"model.layers.31.self_attn.k_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.326210Z","level":"DEBUG","fields":{"path":"model.layers.31.self_attn.v_proj.weight","shape":"[1024, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334093Z","level":"DEBUG","fields":{"path":"model.layers.31.self_attn.o_proj.weight","shape":"[4096, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334182Z","level":"DEBUG","fields":{"path":"model.layers.31.mlp.gate_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334246Z","level":"DEBUG","fields":{"path":"model.layers.31.mlp.up_proj.weight","shape":"[14336, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334294Z","level":"DEBUG","fields":{"path":"model.layers.31.mlp.down_proj.weight","shape":"[4096, 14336]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334347Z","level":"DEBUG","fields":{"path":"model.layers.31.input_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334395Z","level":"DEBUG","fields":{"path":"model.layers.31.post_attention_layernorm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334447Z","level":"DEBUG","fields":{"path":"model.norm.weight","shape":"[4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
+{"timestamp":"2023-10-17T18:54:42.334504Z","level":"DEBUG","fields":{"path":"lm_head.weight","shape":"[32000, 4096]","dtype":"f32"},"target":"candle_nn::var_builder"}
