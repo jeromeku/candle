@@ -19,11 +19,11 @@ num-traits = { workspace = true }
 rayon = { workspace = true }
 safetensors = { workspace = true }
 serde = { workspace = true }
+tracing = { workspace = true }
 
 [dev-dependencies]
 anyhow = { workspace = true }
 clap = { workspace = true }
-tracing = { workspace = true }
 
 [features]
 default = []
