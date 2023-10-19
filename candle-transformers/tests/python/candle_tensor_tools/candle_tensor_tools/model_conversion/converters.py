@@ -2,11 +2,15 @@ import os
 from typing import Callable, Optional
 
 import torch
-import tqdm
-from huggingface_hub import hf_hub_download
+from huggingface_hub import hf_hub_download, login
+from rich import print
+from rich.progress import track
+from rich.traceback import install
 from safetensors.torch import save_file
 
 from ..model_checking import find_pytorch_files, find_safetensor_files, hf_hub_download
+
+install()
 
 
 def _make_tensors_contiguous(model: dict):
@@ -34,8 +38,9 @@ def _convert_pytorch_to_safetensor_files(pt_file_paths, outdir, normalization_fu
     """Converts a list of PyTorch files to SafeTensor format"""
     if not os.path.exists(outdir):
         os.makedirs(outdir)
-    for pt_file_path in tqdm.tqdm(
-        pt_file_paths, desc="Converting pytorch files to safetensor format"
+    for pt_file_path in track(
+        pt_file_paths,
+        description="Converting [yellow]pytorch pickle files[/yellow] to [green]safetensors[/green]...\n",
     ):
         out_file = os.path.splitext(os.path.basename(pt_file_path))[0] + ".safetensors"
         out_path = os.path.join(outdir, out_file)
@@ -46,10 +51,9 @@ def _upload_to_hub(upload_dir, repo_id, repo_type="model", hf_token=None):
     """Uploads a directory to HuggingFace Hub"""
     from huggingface_hub import HfApi
 
+    print(f"Uploading safetensors to [blue]{repo_id}[/blue] on 🤗 HuggingFace Hub 🤗")
     token = hf_token or os.environ.get("HUGGING_FACE_HUB_TOKEN", "")
     if not token:
-        from huggingface_hub import login
-
         login()
     else:
         login(token=token)
@@ -87,24 +91,33 @@ def convert_pytorch_to_safetensors(
         upload_to_hub (bool): If True, uploads converted files to HF Hub.
         repo_id (str): If upload_to_hub is True, repo_id is the name of the repo to upload to. If repo does not already exist on HF Hub, it will be created.
     """
-    outdir = outdir or repo.split("/")[-1]
+    model_name = repo.split("/")[-1]
+    outdir = outdir or model_name
 
     safetensor_files = find_safetensor_files(repo)
     if len(safetensor_files) > 0 and not force:
         raise ValueError(
-            f"Safe tensor files already found in repo.  Call again with `force=True` to force conversion."
+            f"Safe tensor files already found in {repo}.  Call again with `force=True` to force conversion."
         )
     pytorch_files = find_pytorch_files(repo)
     if len(pytorch_files) == 0:
         raise ValueError(f"No PyTorch files found in {repo}.")
 
+    print(f"Found following pytorch pickle files in [blue]{repo}:")
+    for pt_file in pytorch_files:
+        print(f"  [italic]{pt_file}")
+    print("")
     pt_paths = [hf_hub_download(repo, os.path.basename(f)) for f in pytorch_files]
     _convert_pytorch_to_safetensor_files(pt_paths, outdir, normalization_func)
 
-    print(f"Saved safetensors to {outdir}")
+    print(f"Saved safetensors to [bold]{outdir}")
 
     if upload_to_hub:
         assert repo_id is not None, "repo_id must be provided if upload_to_hub is True"
         _upload_to_hub(outdir, repo_id)
 
+    url = f"https://huggingface.co/{repo_id}"
+    print("")
+    print("[bold]Finished processing![/bold]")
+    print(f"Check [bold blue][link={url}]{url}[/link][/bold blue] for uploaded files!")
     return outdir
