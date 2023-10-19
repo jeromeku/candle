@@ -10,8 +10,10 @@ from typing import Callable, List, Optional
 
 import jsonlines
 import requests  # pip install requests
+import torch
 import tqdm
 from huggingface_hub import HfFileSystem, hf_hub_download, hf_hub_url
+from safetensors.torch import save_file
 
 # HFHUB_URL_TEMPLATE = "https://huggingface.co/{model_path}/resolve/main/{filename}"
 
@@ -157,16 +159,25 @@ def get_safetensor_headers(repo: str, merge: bool = True):
     return dict(sorted(headers.items()))
 
 
+def _make_tensors_contiguous(model: dict):
+    """Makes tensors contiguous in-place"""
+
+    for k, v in model.items():
+        if isinstance(v, torch.Tensor):
+            model[k] = v.contiguous()
+
+
 def _convert_single_file(in_path, out_path, normalization_func):
     """Converts a single PyTorch file to SafeTensor format"""
-    import torch
-    from safetensors.torch import save_file
 
     model = torch.load(in_path)
     if normalization_func is not None:
         model = {normalization_func(k): v for k, v in model.items()}
-
-    save_file(model, out_path)
+    try:
+        save_file(model, out_path)
+    except ValueError as e:
+        _make_tensors_contiguous(model)
+        save_file(model, out_path)
 
 
 def _convert_pytorch_to_safetensor_files(pt_file_paths, outdir, normalization_func):
@@ -174,7 +185,7 @@ def _convert_pytorch_to_safetensor_files(pt_file_paths, outdir, normalization_fu
     if not os.path.exists(outdir):
         os.makedirs(outdir)
     for pt_file_path in tqdm.tqdm(
-        pt_file_paths, desc="Converting PyTorch files to SafenTensor format"
+        pt_file_paths, desc="Converting pytorch files to safetensor format"
     ):
         out_file = os.path.splitext(os.path.basename(pt_file_path))[0] + ".safetensors"
         out_path = os.path.join(outdir, out_file)
@@ -215,8 +226,8 @@ def convert_pytorch_to_safetensors(
 ):
     """Converts pickled PyTorch model files to SafeTensor format
 
-    Downloads the pytorch files from HF Hub, converts them to SafeTensor format
-    and uploads them to HF Hub (optionally).
+    Downloads the pytorch files from HF Hub, converts them to safetensor format
+    and uploads them to HF Hub (optional).
 
     Args:
         repo (str): HuggingFace Hub repo name
