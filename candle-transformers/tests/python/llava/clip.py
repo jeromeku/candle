@@ -486,3 +486,22 @@ class CLIPImageProcessor(BaseImageProcessor):
 
         data = {"pixel_values": images}
         return BatchFeature(data=data, tensor_type=return_tensors)
+
+
+def main():
+    import requests
+    from PIL import Image
+    from transformers import AutoProcessor, CLIPVisionModel
+
+    LLAVA_IMAGE_ENCODER = "openai/clip-vit-large-patch14-336"
+    model = CLIPVisionModel.from_pretrained("openai/clip-vit-base-patch32")
+    processor = AutoProcessor.from_pretrained("openai/clip-vit-base-patch32")
+
+    url = "http://images.cocodataset.org/val2017/000000039769.jpg"
+    image = Image.open(requests.get(url, stream=True).raw)
+
+    inputs = processor(images=image, return_tensors="pt")
+
+    outputs = model(**inputs)
+    last_hidden_state = outputs.last_hidden_state
+    pooled_output = outputs.pooler_output  # pooled CLS states
