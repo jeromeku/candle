@@ -14,14 +14,10 @@
 # limitations under the License.
 """Image processor class for CLIP."""
 
-from typing import Dict, List, Optional, Union
+from typing import Dict, Iterable, List, Optional, Union
 
 import numpy as np
-from transformers.image_processing_utils import (
-    BaseImageProcessor,
-    BatchFeature,
-    get_size_dict,
-)
+from transformers.image_processing_utils import BatchFeature, get_size_dict
 from transformers.image_transforms import (
     center_crop,
     convert_to_rgb,
