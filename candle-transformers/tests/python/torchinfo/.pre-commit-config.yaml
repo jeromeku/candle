@@ -1,0 +1,60 @@
+ci:
+  skip: [mypy, pytest]
+repos:
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.15.0
+    hooks:
+    - id: pyupgrade
+      args: [--py38-plus]
+
+  - repo: https://github.com/hadialqattan/pycln
+    rev: v2.2.2
+    hooks:
+      - id: pycln
+        args: [--all]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 23.9.1
+    hooks:
+      - id: black
+        args: [-C]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies:
+          [
+            flake8-future-annotations,
+            flake8-bugbear,
+            flake8-comprehensions,
+          ]
+
+  - repo: https://github.com/PyCQA/pylint
+    rev: v3.0.1
+    hooks:
+      - id: pylint
+        args: ["--disable=import-error"]
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: python
+        types: [python]
+        require_serial: true
+
+      - id: pytest
+        name: pytest
+        entry: pytest --cov=torchinfo --cov-report=html --durations=0
+        language: python
+        types: [python]
+        always_run: true
+        pass_filenames: false
+        verbose: true
