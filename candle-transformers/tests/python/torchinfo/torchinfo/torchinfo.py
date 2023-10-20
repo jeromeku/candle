@@ -229,7 +229,7 @@ def summary(
     )
     if verbose > Verbosity.QUIET:
         print(results)
-    return results
+    return summary_list, results
 
 
 def process_input(

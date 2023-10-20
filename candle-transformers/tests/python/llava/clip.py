@@ -17,6 +17,7 @@
 from typing import Dict, Iterable, List, Optional, Union
 
 import numpy as np
+from torch.nn.modules import module
 from transformers.image_processing_utils import BatchFeature, get_size_dict
 from transformers.image_transforms import (
     center_crop,
